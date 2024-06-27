@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4302e494661f2a621f37c6276cbc3c31 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4302e494661f2a621f37c6276cbc3c31" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4302e494661f2a621f37c6276cbc3c31 = L.map(
+                "map_4302e494661f2a621f37c6276cbc3c31",
+                {
+                    center: [42.035185000000006, -93.63537000000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb603a8398e33b98c9b117f466c11c17 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4302e494661f2a621f37c6276cbc3c31);
+        
+    
+            var marker_106640ec10f03b9e7920f41ffc225395 = L.marker(
+                [42.034722, -93.620833],
+                {}
+            ).addTo(map_4302e494661f2a621f37c6276cbc3c31);
+        
+    
+        var popup_d1eb8551b44ab4b6fe620e11cd8c6756 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_78f90825304f8a8760f18deb07b29b71 = $(`<div id="html_78f90825304f8a8760f18deb07b29b71" style="width: 100.0%; height: 100.0%;"><b>Index:</b> 0<br>                      <b>SalePrice:</b> $200000<br>                      <b>GrLivArea:</b> 1500 sqft<br>                      <b>OverallQual:</b> 7<br>                      <b>KitchenQual:</b> Gd<br>                      <b>TotRmsAbvGrd:</b> 7<br>                      <b>Fireplaces:</b> 1<br>                      <b>PSF:</b> $133.33 /sqft</div>`)[0];
+                popup_d1eb8551b44ab4b6fe620e11cd8c6756.setContent(html_78f90825304f8a8760f18deb07b29b71);
+            
+        
+
+        marker_106640ec10f03b9e7920f41ffc225395.bindPopup(popup_d1eb8551b44ab4b6fe620e11cd8c6756)
+        ;
+
+        
+    
+    
+            var marker_c82150b1f738c38fe8379b481d489be1 = L.marker(
+                [42.028333, -93.631944],
+                {}
+            ).addTo(map_4302e494661f2a621f37c6276cbc3c31);
+        
+    
+        var popup_257b52bd288569692f7ce4c2960d85df = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e5e9b9fa914f960f0e591ac6ca34d5f0 = $(`<div id="html_e5e9b9fa914f960f0e591ac6ca34d5f0" style="width: 100.0%; height: 100.0%;"><b>Index:</b> 1<br>                      <b>SalePrice:</b> $250000<br>                      <b>GrLivArea:</b> 1800 sqft<br>                      <b>OverallQual:</b> 8<br>                      <b>KitchenQual:</b> TA<br>                      <b>TotRmsAbvGrd:</b> 8<br>                      <b>Fireplaces:</b> 2<br>                      <b>PSF:</b> $138.89 /sqft</div>`)[0];
+                popup_257b52bd288569692f7ce4c2960d85df.setContent(html_e5e9b9fa914f960f0e591ac6ca34d5f0);
+            
+        
+
+        marker_c82150b1f738c38fe8379b481d489be1.bindPopup(popup_257b52bd288569692f7ce4c2960d85df)
+        ;
+
+        
+    
+    
+            var marker_ba5ff5cf92e7a6ffaf957067dbacff89 = L.marker(
+                [42.0425, -93.653333],
+                {}
+            ).addTo(map_4302e494661f2a621f37c6276cbc3c31);
+        
+    
+        var popup_42a74fbf99ed2c9ad90e8f481df8442c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c3af6137ee952396706b1dd2c20edb04 = $(`<div id="html_c3af6137ee952396706b1dd2c20edb04" style="width: 100.0%; height: 100.0%;"><b>Index:</b> 2<br>                      <b>SalePrice:</b> $300000<br>                      <b>GrLivArea:</b> 2000 sqft<br>                      <b>OverallQual:</b> 9<br>                      <b>KitchenQual:</b> Ex<br>                      <b>TotRmsAbvGrd:</b> 9<br>                      <b>Fireplaces:</b> 3<br>                      <b>PSF:</b> $150.00 /sqft</div>`)[0];
+                popup_42a74fbf99ed2c9ad90e8f481df8442c.setContent(html_c3af6137ee952396706b1dd2c20edb04);
+            
+        
+
+        marker_ba5ff5cf92e7a6ffaf957067dbacff89.bindPopup(popup_42a74fbf99ed2c9ad90e8f481df8442c)
+        ;
+
+        
+    
+</script>
+</html>
